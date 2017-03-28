@@ -1,4 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,900');
+
 * {
 	box-sizing: border-box;
 }
+
+.background {
+	height: 22rem;
+	background-image: url(../graphics/porsche.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: left;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: 3.125rem;
+	background-color: rgba(0,0,0,0.5);
+}
+
+.header p {
+	color: white;
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.313em;
+}
+
+.phrase {
+	width: 100%;
+	height: 10rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.phrase p {
+	color: white;
+	font-family: 'Raleway', sans-serif;
+	text-shadow: 1px 1px 0px black;
+	font-size: 1.5em;
+}
+
+.button {
+	background-color: white;
+	border: none;
+	margin-top: 5.3rem;
+	width: 20rem;
+	border-radius: 100px;
+	border-top-left-radius: 45px;
+	border-top-right-radius: 45px;
+	padding: 8px;
+	cursor: pointer;
+	font-family: 'Raleway 900', sans-serif;
+	font-size: 1.313em;
+	box-shadow: 0px 0px 13px rgba(255,255,255,0.55)
+}
+
+.button_wrap {
+	display: flex;
+	height: 30vw;
+	justify-content: center;
+	align-items: center;
+}
+
+.fa-angle-right {
+	position: absolute;
+	color: black;
+	margin-left: 4.5rem;
+	font-size: 2em;
+	-webkit-text-stroke: 1.5px black;
+}
+
+.fa-angle-left {
+	color: white;
+	font-size: 2em;
+	margin-left: 1rem;
+	-webkit-text-stroke: 1.5px white;
+	cursor: pointer;
+}
+
+.profile {
+	margin-right: 1rem;
+	border-radius: 50%;
+	width: 1.8rem;
+	height: 1.8rem;
+	background-color: white;
+	-webkit-clip-path: circle(50% at 50% 50%);
+	clip-path: circle(50% at 50% 50%);
+}
+
+.profile img {
+	right: .7rem;
+	position: absolute;
+    height: auto; 
+    width: auto; 
+    max-width: 37px; 
+    max-height: 37px;
+}
+
+.content {
+	position: absolute;
+	text-align: center;
+	padding-top: 12px;
+	padding-bottom: 14px;
+	padding-right: 24px;
+	padding-left: 24px;
+}
+
+.content p {
+	font-family: 'Raleway', sans-serif;
+}
+
+
+
+
+
 
