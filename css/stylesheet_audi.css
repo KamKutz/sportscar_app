@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,900');
+
+/* Global */
+* {
+	box-sizing: border-box;
+}
+/* Global */
+
+
+/* Background */
+.background {
+	height: 22rem;
+	background-image: url(../graphics/audi.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+/* Background */
+
+
+/* Header Items */
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: 3.125rem;
+	background-color: rgba(0,0,0,0.5);
+}
+
+.header p {
+	color: white;
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.313em;
+}
+
+.fa-angle-left {
+	color: white;
+	margin-left: 1rem;
+	-webkit-text-stroke: 1.5px white;
+	cursor: pointer;
+}
+
+.profile {
+	margin-right: 1rem;
+	border-radius: 50%;
+	width: 1.8rem;
+	height: 1.8rem;
+	background-color: white;
+	-webkit-clip-path: circle(50% at 50% 50%);
+	clip-path: circle(50% at 50% 50%);
+}
+
+.profile img {
+	right: .7rem;
+	position: absolute;
+    height: auto; 
+    width: auto; 
+    max-width: 37px; 
+    max-height: 37px;
+}
+/* Header Items */
+
+
+/* Middle Content */
+.phrase {
+	width: 100%;
+	height: 10rem;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.phrase p {
+	color: white;
+	font-family: 'Raleway', sans-serif;
+	text-shadow: 1px 1px 0px black;
+	font-size: 1.5em;
+}
+
+.button {
+	background-color: #E21D38;
+	color: white;
+	border: none;
+	margin-top: 5.3rem;
+	width: 20rem;
+	border-radius: 100px;
+	border-top-left-radius: 45px;
+	border-top-right-radius: 45px;
+	padding: 8px;
+	cursor: pointer;
+	font-family: 'Raleway 900', sans-serif;
+	font-size: 1.313em;
+	box-shadow: 0px 0px 13px rgba(226, 29, 56, 0.55)
+}
+
+.button_wrap {
+	display: flex;
+	height: 30vw;
+	justify-content: center;
+	align-items: center;
+}
+
+.fa-angle-right {
+	position: absolute;
+	color: white;
+	margin-left: 4.5rem;
+	-webkit-text-stroke: 1.5px white;
+}
+
+.fa-arrow-down {
+	margin: .6rem;
+	color: black;
+	-webkit-text-stroke: 1.2px white;
+}
+
+.side_nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: absolute;
+	width: 100%;
+	height: 10%;
+	bottom: 76.5%;
+}
+
+.side1 {
+	margin-left: -20px;
+    width: 70px;
+    height: 35px; /* as the half of the width */
+    background-color: white;
+    border-top-left-radius: 110px;  /* 100px of height + 10px of border */
+    border-top-right-radius: 110px; /* 100px of height + 10px of border */
+    border: none;
+    transform: rotate(90deg);
+    cursor: pointer;
+}
+
+.side2 {
+	margin-right: -20px;
+    width: 70px;
+    height: 35px; /* as the half of the width */
+    background-color: white;
+    border-top-left-radius: 110px;  /* 100px of height + 10px of border */
+    border-top-right-radius: 110px; /* 100px of height + 10px of border */
+    border: none;
+    transform: rotate(270deg);
+    left: 20.7rem;
+    cursor: pointer;
+}
+/* Middle Content */
+
+
+/* Bottom Content */
+.content {
+	position: relative;
+}
+
+.content p {
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+	padding-top: 12px;
+	padding-bottom: 14px;
+	padding-right: 24px;
+	padding-left: 24px;
+}
+/* Bottom Content*/
+
+@media screen and (min-width:460px) {
+	.background {
+		height: 25rem;
+	}
+
+	.button {
+		margin-top: 9rem;
+	}
+
+	.side1 {
+	    width: 85px;
+	    height: 42.5px; /* as the half of the width */
+	}
+
+	.side2 {
+	    width: 85px;
+	    height: 42.5px; /* as the half of the width */
+	}
+
+	.fa-arrow-down {
+		margin: 1rem;
+	}
+}
+
+@media screen and (min-width:580px) {
+	.background {
+		height: 30rem;
+	}
+
+	.button {
+		margin-top: 15.5rem;
+	}
+}
+
+@media screen and (min-width:710px) {
+	.background {
+		height: 35rem;
+	}
+
+	.button {
+		margin-top: 21.5rem;
+	}
+
+	.side1 {
+		margin-left: -25px;
+	    width: 100px;
+	    height: 50px; /* as the half of the width */
+	}
+
+	.side2 {
+		margin-right: -25px;
+	    width: 100px;
+	    height: 50px; /* as the half of the width */
+	}
+
+	.fa-arrow-down {
+		margin: 1.3rem;
+	}
+
+
+}
+
+@media screen and (min-width:780px) {
+	.background {
+		height: 40rem;
+	}
+
+	.button {
+		bottom: 65%;
+		position: absolute;
+	}
+
+	.content {
+		background-color: white;
+		top: 75.8%;
+		position: absolute;
+	}
+
+	.phrase p {
+		font-size: 2em;
+	}
+}
+
+@media screen and (min-width:900px) {
+	.background {
+		height: 43rem;
+	}
+
+	.button {
+		margin-bottom: ;
+	}
+
+	.content {
+		top: 88%;
+	}
+
+	.phrase {
+		height: 12rem;
+	}
+
+	.side1 {
+		margin-left: -30px;
+	    width: 120px;
+	    height: 60px; /* as the half of the width */
+	}
+
+	.side2 {
+		margin-right: -30px;
+	    width: 120px;
+	    height: 60px; /* as the half of the width */
+	}
+
+	.fa-arrow-down {
+		margin: 1.8rem;
+	}
+}
+
+@media screen and (min-width:1275px) {
+	
+}
+
+

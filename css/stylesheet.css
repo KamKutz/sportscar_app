@@ -1,82 +1,30 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:400,900');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,900|Yeseva+One');
 
+/* Global */
 * {
 	box-sizing: border-box;
 }
+/* Global */
 
-.background {
-	height: 22rem;
-	background-image: url(../graphics/porsche.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: left;
-}
 
+/* Header Items */
 .header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	width: 100%;
 	height: 3.125rem;
-	background-color: rgba(0,0,0,0.5);
 }
 
 .header p {
-	color: white;
-	font-family: 'Raleway', sans-serif;
-	font-size: 1.313em;
-}
-
-.phrase {
-	width: 100%;
-	height: 10rem;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.phrase p {
-	color: white;
-	font-family: 'Raleway', sans-serif;
-	text-shadow: 1px 1px 0px black;
-	font-size: 1.5em;
-}
-
-.button {
-	background-color: white;
-	border: none;
-	margin-top: 5.3rem;
-	width: 20rem;
-	border-radius: 100px;
-	border-top-left-radius: 45px;
-	border-top-right-radius: 45px;
-	padding: 8px;
-	cursor: pointer;
-	font-family: 'Raleway 900', sans-serif;
-	font-size: 1.313em;
-	box-shadow: 0px 0px 13px rgba(255,255,255,0.55)
-}
-
-.button_wrap {
-	display: flex;
-	height: 30vw;
-	justify-content: center;
-	align-items: center;
-}
-
-.fa-angle-right {
-	position: absolute;
 	color: black;
-	margin-left: 4.5rem;
-	font-size: 2em;
-	-webkit-text-stroke: 1.5px black;
+	font-family: 'Yeseva One', cursive;
+	font-size: 1.875em;
 }
 
-.fa-angle-left {
-	color: white;
-	font-size: 2em;
+.fa-sign-in {
+	color: black;
 	margin-left: 1rem;
-	-webkit-text-stroke: 1.5px white;
 	cursor: pointer;
 }
 
@@ -98,19 +46,481 @@
     max-width: 37px; 
     max-height: 37px;
 }
+/* Header Items */
 
-.content {
+
+/* Middle Content */
+.all_wrap {
+	margin-top: 1rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+
+/* Audi */
+.audi {
+	background-image: url(../graphics/audi.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: 0px -100px;
+	filter: contrast(0.55);
+	border: none;
+	top: 20rem;
+	width: 20rem;
+	height: 2.938rem;
+	margin-bottom: 1.25rem;
+	cursor: pointer;
+	box-shadow: 0px 0px 13px rgba(0,0,0,0.55)
+}
+
+.audi_content {
 	position: absolute;
-	text-align: center;
-	padding-top: 12px;
-	padding-bottom: 14px;
-	padding-right: 24px;
-	padding-left: 24px;
+	display: flex;
+	justify-content: space-between;
+	top: 9.8%;
+	width: 20rem;
+	height: 2.938rem;
+	font-size: 1.313em;
+	z-index: 1;
 }
 
-.content p {
+.audi_content p {
+	margin-left: 2rem;
+	color: white;
 	font-family: 'Raleway', sans-serif;
+	font-weight: 900;
+	font-size: 1.2em;
 }
+
+.audi_logo {
+	margin-right: 0.625rem;
+    height: auto; 
+    width: auto; 
+    max-width: 59px;
+	max-height: 33px;
+}
+
+.au_click {
+	bottom: 0.625rem;
+	position: absolute;
+	width: 20rem;
+	height: 2.938rem;
+	cursor: pointer;
+}
+/* Audi */
+
+
+/* Aston */
+.aston {
+	background-image: url(../graphics/aston.jpg);
+	background-repeat: no-repeat;
+	background-size: 110%;
+	background-position: 0px -153px;
+	filter: contrast(.55);
+	border: none;
+	top: 20rem;
+	width: 20rem;
+	height: 2.938rem;
+	margin-bottom: 1.25rem;
+	cursor: pointer;
+	box-shadow: 0px 0px 13px rgba(0,0,0,0.55)
+}
+
+.aston_content {
+	position: absolute;
+	display: flex;
+	justify-content: space-between;
+	top: 18.8%;
+	width: 20rem;
+	height: 2.938rem;
+	font-size: 1.313em;
+	z-index: 1;
+}
+
+.aston_content p {
+	margin-left: 2rem;
+	color: white;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 900;
+	font-size: 1.2em;
+}
+
+.aston_logo {
+	margin-right: 0.625rem;
+    height: auto; 
+    width: auto; 
+    max-width: 62px;
+	max-height: 28px;
+}
+
+.a_click {
+	bottom: 0.625rem;
+	position: absolute;
+	width: 20rem;
+	height: 2.938rem;
+	cursor: pointer;
+}
+/* Aston */
+
+
+/* BMW */
+.bmw {
+	background-image: url(../graphics/bmw.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: 0px -45px;
+	filter: contrast(.55);
+	border: none;
+	top: 20rem;
+	width: 20rem;
+	height: 2.938rem;
+	margin-bottom: 1.25rem;
+	cursor: pointer;
+	box-shadow: 0px 0px 13px rgba(0,0,0,0.55)
+}
+
+.bmw_content {
+	position: absolute;
+	display: flex;
+	justify-content: space-between;
+	top: 27.8%;
+	width: 20rem;
+	height: 2.938rem;
+	font-size: 1.313em;
+	z-index: 1;
+}
+
+.bmw_content p {
+	margin-left: 2rem;
+	color: white;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 900;
+	font-size: 1.2em;
+}
+
+.bmw_logo {
+	margin-right: 0.625rem;
+	bottom: 1rem;
+    height: auto; 
+    width: auto; 
+    max-width: 30px;
+	max-height: 30px;
+}
+
+.b_click {
+	bottom: 0.625rem;
+	position: absolute;
+	width: 20rem;
+	height: 2.938rem;
+	cursor: pointer;
+}
+/* BMW */
+
+
+/* Ferrari */
+.ferrari {
+	background-image: url(../graphics/ferrari.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: 0px -77px;
+	filter: contrast(.55);
+	border: none;
+	top: 20rem;
+	width: 20rem;
+	height: 2.938rem;
+	margin-bottom: 1.25rem;
+	cursor: pointer;
+	box-shadow: 0px 0px 13px rgba(0,0,0,0.55)
+}
+
+.ferrari_content {
+	position: absolute;
+	display: flex;
+	justify-content: space-between;
+	top: 36.5%;
+	width: 20rem;
+	height: 2.938rem;
+	font-size: 1.313em;
+	z-index: 1;
+}
+
+.ferrari_content p {
+	margin-left: 2rem;
+	color: white;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 900;
+	font-size: 1.2em;
+}
+
+.ferrari_logo {
+	margin-right: 0.625rem;
+    height: auto; 
+    width: auto; 
+    max-width: 25px;
+	max-height: 33px;
+}
+
+.f_click {
+	bottom: 0.625rem;
+	position: absolute;
+	width: 20rem;
+	height: 2.938rem;
+	cursor: pointer;
+}
+/* Ferrari */
+
+
+/* Lamb */
+.lamb {
+	background-image: url(../graphics/lamb.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: 0px -102.5px;
+	filter: contrast(.55);
+	border: none;
+	top: 20rem;
+	width: 20rem;
+	height: 2.938rem;
+	margin-bottom: 1.25rem;
+	cursor: pointer;
+	box-shadow: 0px 0px 13px rgba(0,0,0,0.55)
+}
+
+.lamb_content {
+	position: absolute;
+	display: flex;
+	justify-content: space-between;
+	top: 45.5%;
+	width: 20rem;
+	height: 2.938rem;
+	font-size: 1.313em;
+	z-index: 1;
+}
+
+.lamb_content p {
+	margin-left: 2rem;
+	color: white;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 900;
+	font-size: 1.2em;
+}
+
+.lamb_logo {
+	margin-right: 0.625rem;
+    height: auto; 
+    width: auto; 
+    max-width: 27px;
+	max-height: 30px;
+}
+
+.l_click {
+	bottom: 0.625rem;
+	position: absolute;
+	width: 20rem;
+	height: 2.938rem;
+	cursor: pointer;
+}
+/* Lamb */
+
+
+/* Mercedes */
+.mercedes {
+	background-image: url(../graphics/mercedes.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: 0px -102.5px;
+	filter: contrast(.55);
+	border: none;
+	top: 20rem;
+	width: 20rem;
+	height: 2.938rem;
+	margin-bottom: 1.25rem;
+	cursor: pointer;
+	box-shadow: 0px 0px 13px rgba(0,0,0,0.55)
+}
+
+.mercedes_content {
+	position: absolute;
+	display: flex;
+	justify-content: space-between;
+	top: 54.5%;
+	width: 20rem;
+	height: 2.938rem;
+	font-size: 1.313em;
+	z-index: 1;
+}
+
+.mercedes_content p {
+	margin-left: 2rem;
+	color: white;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 900;
+	font-size: 1.2em;
+}
+
+.mercedes_logo {
+	margin-right: 0.625rem;
+    height: auto; 
+    width: auto; 
+    max-width: 40px;
+	max-height: 26px;
+}
+
+.m_click {
+	bottom: 0.625rem;
+	position: absolute;
+	width: 20rem;
+	height: 2.938rem;
+	cursor: pointer;
+}
+/* Mercedes */
+
+
+/* Porsche */
+.porsche {
+	background-image: url(../graphics/porsche.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: 0px -102.5px;
+	filter: contrast(.55);
+	border: none;
+	top: 20rem;
+	width: 20rem;
+	height: 2.938rem;
+	margin-bottom: 1.25rem;
+	cursor: pointer;
+	box-shadow: 0px 0px 13px rgba(0,0,0,0.55)
+}
+
+.porsche_content {
+	position: absolute;
+	display: flex;
+	justify-content: space-between;
+	top: 63.4%;
+	width: 20rem;
+	height: 2.938rem;
+	font-size: 1.313em;
+	z-index: 1;
+}
+
+.porsche_content p {
+	margin-left: 2rem;
+	color: white;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 900;
+	font-size: 1.2em;
+}
+
+.porsche_logo {
+	margin-right: 0.625rem;
+    height: auto; 
+    width: auto; 
+    max-width: 49px;
+	max-height: 27px;
+}
+
+.p_click {
+	bottom: 0.625rem;
+	position: absolute;
+	width: 20rem;
+	height: 2.938rem;
+	cursor: pointer;
+}
+/* Porsche */
+
+
+/* Tesla */
+.tesla {
+	background-image: url(../graphics/tesla.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: 0px -102.5px;
+	filter: contrast(.55);
+	border: none;
+	top: 20rem;
+	width: 20rem;
+	height: 2.938rem;
+	margin-bottom: 1.25rem;
+	cursor: pointer;
+	box-shadow: 0px 0px 13px rgba(0,0,0,0.55)
+}
+
+.tesla_content {
+	position: absolute;
+	display: flex;
+	justify-content: space-between;
+	top: 72%;
+	width: 20rem;
+	height: 2.938rem;
+	font-size: 1.313em;
+	z-index: 1;
+}
+
+.tesla_content p {
+	margin-left: 2rem;
+	color: white;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 900;
+	font-size: 1.2em;
+}
+
+.tesla_logo {
+	margin-right: 0.625rem;
+    height: auto; 
+    width: auto; 
+    max-width: 23px;
+	max-height: 29px;
+}
+
+.t_click {
+	bottom: 0.5rem;
+	position: absolute;
+	width: 20rem;
+	height: 2.938rem;
+	cursor: pointer;
+}
+/* Tesla */
+
+/* Middle Content */
+
+
+@media screen and (min-width:460px) {
+	.button {
+		margin-top: 9rem;
+	}
+}
+
+@media screen and (min-width:580px) {
+	.button {
+		margin-top: 15.5rem;
+	}
+}
+
+@media screen and (min-width:710px) {
+	.button {
+		margin-top: 21.5rem;
+	}
+}
+
+@media screen and (min-width:780px) {
+	.button {
+		bottom: 65%;
+		position: absolute;
+	}
+}
+
+@media screen and (min-width:900px) {
+	.button {
+		margin-bottom: ;
+	}
+}
+
+@media screen and (min-width:1275px) {
+
+}
+
 
 
 
